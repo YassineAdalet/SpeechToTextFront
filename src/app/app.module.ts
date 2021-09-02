@@ -3,14 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SpeechtoTextComponent } from './speechto-text/speechto-text.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { UploadComponent } from './upload/upload.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SpeechtoTextComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

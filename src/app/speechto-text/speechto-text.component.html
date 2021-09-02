@@ -1,0 +1,6 @@
+<p>speechto-text works!</p>
+<input type="file" [(ngModel)]='filepath'>
+<button (click)="ConvertSpeechToText()" type="button" class="btn btn-primary m-t-15 waves-effect"> Convertir </button>
+<textarea> {{text}} </textarea>
+
+<input type="file" class="file-upload" onchange="console.log(event.target.files)">
